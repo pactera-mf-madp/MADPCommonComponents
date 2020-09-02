@@ -89,11 +89,12 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  spec.vendored_frameworks = "MADPCommonComponents.framework"
-  # spec.source_files  = "MADPCommonComponents.framework/**/*.{h,m}","MADPCommonComponents.framework"
+  # spec.vendored_frameworks = "MADPCommonComponents.framework"
+  spec.source_files  = "Classes//*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
+  spec.frameworks = "CoreLocation"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
