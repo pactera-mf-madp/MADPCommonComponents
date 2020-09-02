@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "MADPCommonComponents"
+  spec.name         = "MFMADPCommonComponents"
   spec.version      = "0.0.1"
-  spec.summary      = "CommonComponents of MADP"
+  spec.summary      = "CommonComponents of MF-MADP"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
