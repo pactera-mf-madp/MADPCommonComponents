@@ -19,6 +19,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "pactera-mf-madp" => "haichuan.liu1@pactera.com" }
   spec.platform     = :ios, "9.0"
   spec.source       = { :git => "https://github.com/pactera-mf-madp/MADPCommonComponents.git", :tag => "#{spec.version}" }
+  spec.source_files  = "MADPCommonComponents.framework/*/*.{h,m}"
   spec.frameworks   = "CoreLocation"
   spec.xcconfig     = { "FRAMEWORK_SEARCH_PATHS" => "\"$(PODS_ROOT)/MFMADPCommonComponents/**\"" }
 
