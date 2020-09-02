@@ -90,11 +90,12 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
   # spec.vendored_frameworks = "MADPCommonComponents.framework"
-  spec.source_files  = "Classes//*.{h,m}"
+  # spec.source_files  = "Classes//*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
   spec.frameworks = "CoreLocation"
+  spec.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "\"$(PODS_ROOT)/MFMADPCommonComponents/**\"" }
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
