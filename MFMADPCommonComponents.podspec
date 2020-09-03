@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MFMADPCommonComponents"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "CommonComponents of MF-MADP"
   spec.description  = <<-DESC 
                     CommonComponents of MADP!     
@@ -19,8 +19,9 @@ Pod::Spec.new do |spec|
   spec.author       = { "pactera-mf-madp" => "haichuan.liu1@pactera.com" }
   spec.platform     = :ios, "9.0"
   spec.source       = { :git => "https://github.com/pactera-mf-madp/MADPCommonComponents.git", :tag => "#{spec.version}" }
-  spec.source_files  = "MADPCommonComponents.framework/*/*.{h,m}"
+  spec.vendored_frameworks = "MADPCommonComponents.framework"
   spec.frameworks   = "CoreLocation"
-  spec.xcconfig     = { "FRAMEWORK_SEARCH_PATHS" => "\"$(PODS_ROOT)/MFMADPCommonComponents/**\"" }
+  # spec.xcconfig     = { "FRAMEWORK_SEARCH_PATHS" => "$(inherited)" }
+  # spec.xcconfig     = { "FRAMEWORK_SEARCH_PATHS" => "\"$(PODS_ROOT)/MFMADPCommonComponents/**\"" }
 
 end
